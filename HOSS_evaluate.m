@@ -5,7 +5,7 @@ function [post_W, post_A, KL_W, KL_A] = HOSS_evaluate(X, mu, Sigma, Aprior, Wpri
 
 %% Initialise variables and conditional prob tables
 p_A = [1-Aprior Aprior];            % prior on awareness state A
-p_W_a1 = [1-Wprior Wprior 0];       % likelihood of world states W given a1
+p_W_a1 = [Wprior 1-Wprior 0];       % likelihood of world states W given a1
 p_W_a0 = [0 0 1];           % likelihood of world states W given a0
 p_W = (p_W_a1 + p_W_a0)./2; % prior on perceptual states W marginalising over A (used for calculating KL divergence)
 

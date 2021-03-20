@@ -21,7 +21,7 @@ for i = 1:length(xgrid)
     for j = 1:length(xgrid)
         
         X = [xgrid(i) xgrid(j)];
-        [post_w, post_A, KL_w(i,j), KL_A(i,j)] = HOSS_evaluate(X, mu, Sigma, 0.5, 0.5);
+        [post_w, post_A, KL_w(i,j), KL_A(i,j)] = HOSS_evaluate(X, mu, Sigma, 0.5, 0.9);
         
         confW(i,j) = max([post_w(1) post_w(2)]);
         posteriorAware(i,j) = post_A(2);

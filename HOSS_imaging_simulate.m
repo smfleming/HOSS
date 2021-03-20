@@ -5,7 +5,7 @@ clear all
 
 % Create 3 likelihood functions
 mu = [0.5 1.5; 1.5 0.5; 0.5 0.5];  % possible Gaussians over X corresponding to each world state
-Sigma = [1 0; 0 1];
+Sigma = [0.1 0; 0 0.1];
 
 Ntrials = 600;
 Nsubj = 30;

@@ -1,7 +1,7 @@
 # Plot summed activation in the network as a function of multivariate input
 
 rm(list=ls())
-setwd("~/Dropbox/Research/Consciousness/HOSS theory/JAGS scripts/")
+setwd("~/Dropbox/Research/Consciousness/HOSS/JAGS/")
 source("HOSS_evaluate.R")
 
 Aprior = 0.2
